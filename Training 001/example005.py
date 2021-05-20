@@ -31,8 +31,8 @@ def compound_interest(principle, rate, time):
     print("Total payment is: ", total)
 
 
-principle = int(input("Please input your principle: "))
-rate = int(input("Please input your rate: "))
-time = int(input("Please input your time: "))
+principle = float(input("Please input your principle: "))
+rate = float(input("Please input your rate: "))
+time = float(input("Please input your time: "))
 
 compound_interest(principle, rate, time)
