@@ -40,12 +40,12 @@ def define_radius_of_circumference(circumference):
 
 def define_radius_of_Sphere_value(Sphere_value):
     PI = math.pi
-    return math.sqrt(((Sphere_value * 3) / (4 * (PI))), 3)
+    return math.pow(((Sphere_value * 3) / (4 * (PI))), (1/3))
 
 
 def define_radius_of_Surface_area(Surface_area):
     PI = math.pi
-    return math.sqrt((Surface_area / (4 * PI)), 2)
+    return math.sqrt((Surface_area / (4 * PI)))
 
     # Drive method
 
@@ -65,7 +65,7 @@ while (answer != "exit"):
     choice = int(input("Please enter your option: "))
 
     if (choice == 1):
-        print("---Radius--------------------------------------")
+        print("---Radius------------------------------------")
         radius = abs(float(input("Please enter your radius: ")))
 
         print(">> Area is %.6f " % findArea(radius))
@@ -74,25 +74,25 @@ while (answer != "exit"):
         print(">> Surface value %.6f " % find_Sphere_value(radius))
 
     elif (choice == 2):
-        print("---Area----------------------------------------")
+        print("---Area--------------------------------------")
         area = abs(float(input("Please enter your Area: ")))
 
         print(">> Radius is %.9f " % define_radius_of_area(area))
 
     elif (choice == 3):
-        print("---Circumference--------------------------------")
+        print("---Circumference------------------------------")
         circumference = abs(float(input("Please enter your Circumference: ")))
 
         print(">> Radius is %.9f " % define_radius_of_circumference(circumference))
 
     elif (choice == 4):
-        print("---Sphere value---------------------------------")
+        print("---Sphere value-------------------------------")
         Sphere_value = abs(float(input("Please enter your Sphere value: ")))
 
         print(">> Radius is %.9f " % define_radius_of_Sphere_value(Sphere_value))
 
     elif (choice == 5):
-        print("---Surface area--------------------------------")
+        print("---Surface area------------------------------")
         Surface_area = abs(float(input("Please enter your Surface area: ")))
 
         print(">> Radius is %.9f " % define_radius_of_Surface_area(Surface_area))
