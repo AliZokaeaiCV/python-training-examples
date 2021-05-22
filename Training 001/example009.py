@@ -12,7 +12,6 @@ N is a prime number and we will return True."""
 
 def check_is_prim_number(num):
     for i in range(2, int((num / 2) + 1)):
-        print(i)
         # If num is divisible by any number between
         # 2 and n/2 , it isn't prime
         if num % i == 0:
@@ -28,16 +27,24 @@ def check_is_prim_number(num):
 def sanitize(num):
     """this function check input if it was a integer number
     return a absolute and positive number, otherwise return Zero"""
-    number = 0
-    if (type(num) == 'int'):
-        number = abs(int(num))
-        return number
+    if (str(type(num)) == "<class 'int'>"):
+        return abs(int(num))
     else:
         return 0
 
+def output_message(message):
+    """This function show a message in output"""
+    if message:
+        print("Your selected number is Prime")
+    else:
+        print("You selected number isn't Prime")
+
+
 
 permission = 0
+
 while (permission == 0):
-    num = sanitize(input("Please enter a number (Positive and integer) for Prime check: "))
-    print(check_is_prim_number(num))
+
+    num = sanitize(int(input("Please enter a number (Positive and integer) for Prime check: ")))
+    print(output_message(check_is_prim_number(num)))
     permission = int(input("if want continue press 0 otherwise press 1: "))
