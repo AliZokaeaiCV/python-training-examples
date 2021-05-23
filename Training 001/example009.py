@@ -35,10 +35,9 @@ def sanitize(num):
 def output_message(message):
     """This function show a message in output"""
     if message:
-        print("Your selected number is Prime")
+        return "Your selected number is Prime"
     else:
-        print("You selected number isn't Prime")
-
+        return "You selected number isn't Prime"
 
 
 permission = 0
