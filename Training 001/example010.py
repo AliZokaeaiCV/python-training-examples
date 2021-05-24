@@ -1,10 +1,12 @@
 """
-In mathematical term, the secquence FN of Fibonacci numbers is defined by the recurrence relation
+In mathematical term, the secquence FN of
+Fibonacci numbers is defined by the
+recurrence relation
 
-Fn = Fn-1 + Fn-2
+F(n) = F(n-1) + F(n-2)
 with seed Value
 
-F0 = 0 and F1 =1
+F(0) = 0 and F(1) =1
 """
 
 
