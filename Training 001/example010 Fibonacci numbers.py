@@ -1,5 +1,5 @@
 """
-In mathematical term, the secquence FN of
+In mathematical term, the sequence FN of
 Fibonacci numbers is defined by the
 recurrence relation
 
