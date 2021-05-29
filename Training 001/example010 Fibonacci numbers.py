@@ -9,10 +9,6 @@ with seed Value
 F(0) = 0 and F(1) =1
 """
 
-
-# Function for nth Fibonacci number
-
-
 def Fibonacci(n):
     """this function calculate fibonacci number of n"""
     if n == 0:
@@ -26,6 +22,9 @@ def Fibonacci(n):
         return Fibonacci(n - 1) + Fibonacci(n - 2)
 
 
+
+
+
 def make_Fibonacci_list(n):
     """This function make a list of all Fibonacci numbers"""
     # Remove negative and string characters
@@ -33,9 +32,10 @@ def make_Fibonacci_list(n):
 
     # list of Fibonacci numbers
     Fibonacci_list = []
-
     # loop on all number between Zero to selected number and add it to our list
     for n in range(0, number):
+
+
         Fibonacci_list.append((n, Fibonacci(n)))
 
     return Fibonacci_list
